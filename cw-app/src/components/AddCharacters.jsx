@@ -9,7 +9,7 @@ class AddCharacters extends Component {
             gender: '',
         }
     }
-
+    //function to update state based on input
     handleInputs = (event) => {
         if (event.target.name === 'name') {
             this.setState({ name: event.target.value })
@@ -19,15 +19,17 @@ class AddCharacters extends Component {
             this.setState({ gender: event.target.value })
         }
     }
-
+    //render new character when button is pressed
     handleSubmission = (event) =>{
         event.preventDefault();
 
-        let displayCharacter;
-
-        displayCharacter=this.state.name
-
-       console.log(`Running${this.state.name}`)
+        let display= document.getElementById('display');
+        //sanity
+        console.log(display)
+        //change innerText 
+        display.innerText=`Name: ${this.state.name}\n\nBirth: ${this.state.birth}\n\nGender: ${this.state.gender}`
+        //sanity
+       console.log(`Running ${this.state.name}`)
     }
 
     render() {
@@ -55,7 +57,7 @@ class AddCharacters extends Component {
                     </fieldset>
                 </form>
                 <div>
-                    <p>{this.displayCharacter}</p>
+                    <p id='display' className='newDisplay'></p>
                 </div>
             </div>
         );

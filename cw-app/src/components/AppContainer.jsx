@@ -14,6 +14,7 @@ class AppContainer extends Component {
             <div>
                 <h1 className='mainTitle'>Star Wars</h1>
                 <div>
+                    {/* Used Router, Link, Route and imported above to link AddCharacters page */}
                     <Router>
                         <div className='links'>
                             <Link to="/" className='base'  >Base</Link>
