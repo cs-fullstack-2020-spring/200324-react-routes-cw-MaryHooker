@@ -23,33 +23,40 @@ class AddCharacters extends Component {
     handleSubmission = (event) =>{
         event.preventDefault();
 
-        
+        let displayCharacter;
+
+        displayCharacter=this.state.name
+
+       console.log(`Running${this.state.name}`)
     }
 
     render() {
         return (
             <div>
                 <form action="">
-                    <fieldset>
-                        <legend>New Character</legend>
+                    <fieldset className='border'>
+                        <legend className='legend'>New Character</legend>
 
                         <div>
                             <label htmlFor="name">Name: </label>
-                            <input type="text" id='name' name='name' value={this.state.name} onChange={this.handleInputs} />
+                            <input type="text" id='name' name='name' value={this.state.name} onChange={this.handleInputs} className='inputs'/>
                         </div>
                         <div>
                             <label htmlFor="birth">Birth Year: </label>
-                            <input type="text" id='birth' name='birth' value={this.state.birth} onChange={this.handleInputs} />
+                            <input type="text" id='birth' name='birth' value={this.state.birth} onChange={this.handleInputs} className='inputs'/>
                         </div>
                         <div>
                             <label htmlFor="gender">Gender: </label>
-                            <input type="text" id='gender' name='gender' value={this.state.gender} onChange={this.handleInputs} />
+                            <input type="text" id='gender' name='gender' value={this.state.gender} onChange={this.handleInputs} className='inputs'/>
                         </div>
                         <div>
-                            <button onClick={this.handleSubmission}>Add Me</button>
+                            <button onClick={this.handleSubmission} className='button'>Add Me</button>
                         </div>
                     </fieldset>
                 </form>
+                <div>
+                    <p>{this.displayCharacter}</p>
+                </div>
             </div>
         );
     }

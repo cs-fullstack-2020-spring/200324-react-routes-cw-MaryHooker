@@ -2,13 +2,13 @@ body{
   background-color: rgba(17, 15, 15, 0.952);
   color: yellow;
   font-family: serif;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   
 }
 
 .mainTitle{
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
 }
 
@@ -22,4 +22,44 @@ span{
 
 hr{
   border: 2px solid rgb(58, 133, 218);
+}
+
+.links{
+ font-size: 18px;
+ font-weight: bold;
+}
+
+.base{
+  color: yellow;
+}
+
+.add{
+  color: red;
+}
+
+.legend{
+  font-size: 22px;
+}
+
+.border{
+  border: 3px solid yellow;
+}
+
+.inputs{
+  background-color: blue;
+  color: yellow;
+  border: 3px solid yellow;
+  margin: 6px;
+  padding: 4px;
+  font-size: 15px;
+  font-family: serif;
+}
+
+.button{
+  background-color: yellow;
+  color: red;
+  border: 2px solid red;
+  font-family: serif;
+  font-size: 16px;
+  font-weight: bold;
 }
