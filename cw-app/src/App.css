@@ -1,0 +1,25 @@
+body{
+  background-color: rgba(17, 15, 15, 0.952);
+  color: yellow;
+  font-family: serif;
+  font-size: 18px;
+  text-align: center;
+  
+}
+
+.mainTitle{
+  font-size: 50px;
+  text-align: center;
+}
+
+.characterTitle{
+  color: red;
+}
+
+span{
+  color: rgb(58, 133, 218);
+}
+
+hr{
+  border: 2px solid rgb(58, 133, 218);
+}
