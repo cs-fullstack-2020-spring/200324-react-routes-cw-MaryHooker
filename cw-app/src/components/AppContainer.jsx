@@ -17,7 +17,7 @@ class AppContainer extends Component {
                     {/* Used Router, Link, Route and imported above to link AddCharacters page */}
                     <Router>
                         <div className='links'>
-                            <Link to="/" className='base'  >Base</Link>
+                            <Link to="/" className='base' >Base</Link>
                             <br />
                             <br />
                         </div>
@@ -31,8 +31,10 @@ class AppContainer extends Component {
                         </Route>
                     </Router>
                 </div>
-
-                <StarWarsCharacters />
+                <div>
+                <StarWarsCharacters/>
+                </div>
+                
             </div>
         );
     }
