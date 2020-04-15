@@ -1,4 +1,6 @@
 # 20-03-24 React Routes CW
+#### Nice styling, great comments, good progress! Also, you can use padding instead of breaks in your render
+#### Score : 5/5
 Set Up
 - Create a new react app called `cw-app`
 - Create a class based component called `AppContainer` with the text `React Routes CW`
